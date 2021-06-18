@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fav-photos.component.css']
 })
 export class FavPhotosComponent implements OnInit {
-  photosTitle = 'Photo/Image Section Title Here';
+  photosTitle = "Megan's Favorite Photos";
   image1 = 'https://www.launchcode.org/assets/icons/target-00c7a0bc7776901e3c5cdc4c36c465f19e41a249bc7267a595f0bfa14ab944b7.png';
-  image2 = '';
-  image3 = '';
+  image2 = 'https://1.bp.blogspot.com/-irYA4Cxv-SY/UKi4PGZC58I/AAAAAAAABvE/CAZQmlcvQYc/s1600/Poodle_Puppy_Picture.jpg';
+  image3 = 'http://images5.fanpop.com/image/photos/28100000/Cute-kitty-animal-cubs-28185372-1920-1200.jpg';
 
   constructor() { }
 

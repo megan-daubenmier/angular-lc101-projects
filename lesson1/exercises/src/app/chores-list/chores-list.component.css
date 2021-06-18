@@ -1,0 +1,10 @@
+.chores ul{
+    font-size: large;
+    color: red;
+    font-style: italic;
+}
+
+.chores h3{
+    text-decoration: underline;
+    color: red;
+}
