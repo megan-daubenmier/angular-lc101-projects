@@ -1,0 +1,17 @@
+h3 {
+    text-decoration: underline;
+}
+
+/* div {
+    text-align: center;
+    left: 35%;
+} */
+
+#box {
+    height: 100px;
+    width: 300px;
+    position: relative;
+    border: 2px solid black;
+    text-align: center;
+    left: 38%;
+}
