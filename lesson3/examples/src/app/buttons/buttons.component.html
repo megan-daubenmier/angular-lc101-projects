@@ -3,7 +3,9 @@
    <button [class.gold]="!goldInactive" [disabled]="goldInactive" (click)="goldInactive=true">Gold</button> <br>
    <button [class.silver]="!silverInactive" [disabled]="silverInactive" (click)="silverInactive=true">Silver</button> <br>
    <button [class.copper]="!copperInactive" [disabled]="copperInactive" (click)="copperInactive=true">Copper</button> <br>
-   <button [class.frustration]="!frustrationInactive" [disabled]="frustrationInactive" (mouseout)="frustrationInactive=false">Frustration Incarnate</button> <br>
-   <button [class.catch]="!catchInactive" (mouseover)="catchInactive=!catchInactive">Catch Me!</button><hr>
+   <div (mouseout)="frustrationInactive=false">
+      <button [class.frustration]="!frustrationInactive" [disabled]="frustrationInactive" (mouseover)="frustrationInactive=true">Frustration Incarnate</button> <br>
+   </div>
+   <button [align]="location" (mouseover)="changeLocation(location)">Catch Me!</button><hr>
    <button (click)="goldInactive = false; silverInactive = false; copperInactive = false">Reactivate Buttons</button>
 </div>

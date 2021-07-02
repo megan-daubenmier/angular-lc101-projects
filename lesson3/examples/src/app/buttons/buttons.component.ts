@@ -11,10 +11,19 @@ export class ButtonsComponent implements OnInit {
    silverInactive: boolean = false;
    copperInactive: boolean = false;
    frustrationInactive: boolean = false;
-   catchInactive: boolean = false;
+   location: string = 'center';
 
    constructor() { }
 
    ngOnInit() { }
+
+   changeLocation(oldLocation: string): string {
+      let locations = ['center', 'right', 'left'];
+      let newLocation = oldLocation;
+      while(newLocation === oldLocation) {
+         newLocation = locations[Math.floor(Math.random())*locations.length];
+      }
+      return newLocation;
+   }
 
 }
