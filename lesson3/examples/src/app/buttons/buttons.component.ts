@@ -17,13 +17,12 @@ export class ButtonsComponent implements OnInit {
 
    ngOnInit() { }
 
-   changeLocation(oldLocation: string): string {
+   changeLocation(oldLocation: string) {
       let locations = ['center', 'right', 'left'];
-      let newLocation = oldLocation;
-      while(newLocation === oldLocation) {
-         newLocation = locations[Math.floor(Math.random())*locations.length];
+      while(this.location === oldLocation) {
+         this.location = locations[Math.floor(Math.random())*locations.length];
       }
-      return newLocation;
+      return;
    }
 
 }

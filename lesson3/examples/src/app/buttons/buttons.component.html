@@ -6,6 +6,8 @@
    <div (mouseout)="frustrationInactive=false">
       <button [class.frustration]="!frustrationInactive" [disabled]="frustrationInactive" (mouseover)="frustrationInactive=true">Frustration Incarnate</button> <br>
    </div>
-   <button [align]="location" (mouseover)="changeLocation(location)">Catch Me!</button><hr>
+   <div [align]="location">
+      <button (mouseover)="changeLocation(location)">Catch Me!</button>
+   </div><hr>
    <button (click)="goldInactive = false; silverInactive = false; copperInactive = false">Reactivate Buttons</button>
 </div>
