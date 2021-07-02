@@ -20,9 +20,10 @@ export class ButtonsComponent implements OnInit {
    changeLocation(oldLocation: string) {
       let locations = ['center', 'right', 'left'];
       while(this.location === oldLocation) {
-         this.location = locations[Math.floor(Math.random())*locations.length];
+         this.location = locations[(Math.floor(Math.random()))*locations.length];
+         console.log(this.location);
       }
-      return;
+      return this.location;
    }
 
 }
